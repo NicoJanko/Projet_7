@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html>
+	<head> <title>Merchex</title></head>
+	<body>
+		<h1>Hello World!</h1>
+		<p>Mes groupes preferes sont:</p>
+			<ul>
+				{% for band in bands %}
+				<li>{{ band.name }}</li>
+				{% endfor %}
+			</ul>
+			<ul>
+				J'ai..
+				{% if bands|length < 5 %}
+					peu de 
+				{% elif bands|length < 10 %}
+					quelques
+				{% else %}
+					beaucoup de 
+				{% endif %}
+					groupes preferes.
+
+	</body>
+</html>

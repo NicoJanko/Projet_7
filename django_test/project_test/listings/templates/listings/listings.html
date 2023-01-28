@@ -1,0 +1,14 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Listing</title>
+</head>
+<body> Listing page : 
+    <ul>
+        {% for listi in listing %}
+        <li>{{ listi.title}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
